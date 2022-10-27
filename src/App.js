@@ -27,7 +27,7 @@ function App() {
 
   const nextImage = ()=> {
     setImage((imageNumber) => {
-      if(imageNumber < IMAGE_DATA.length - 0) {
+      if(imageNumber < IMAGE_DATA.length) {
         return imageNumber + 1;
       }
       return 0;
