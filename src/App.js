@@ -27,18 +27,20 @@ function App() {
 
   const nextImage = ()=> {
     setImage((imageNumber) => {
-      if(imageNumber < IMAGE_DATA.length) {
+      if(imageNumber < IMAGE_DATA.length - 1) {
         return imageNumber + 1;
       }
       return 0;
     })
+    console.log(image)
   }
+  
   const prevImage = () => {
     setImage((imageNumber) => {
       if(imageNumber > 0) {
         return imageNumber - 1;
       }
-      return IMAGE_DATA.length;
+      return IMAGE_DATA.length - 1;
     })
   }
 
